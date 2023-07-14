@@ -1,0 +1,9 @@
+Click
+numpy
+ttictoc
+plotly
+pandas
+simulus
+psutil
+requests
+loguru

@@ -1,0 +1,12 @@
+{
+    "proc_num": {
+        "A40": 8,
+        "RTX_2080Ti": 8,
+        "RTX_TITAN": 8,
+        "TITAN_Xp": 8,
+        "TITAN_V": 8,
+        "GTX_1080": 8,
+        "TITAN_X": 8,
+        "M40": 8
+    }
+}
