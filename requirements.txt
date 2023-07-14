@@ -7,3 +7,4 @@ simulus
 psutil
 requests
 loguru
+gymnasium

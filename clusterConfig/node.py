@@ -1,5 +1,3 @@
-__metaclass__ = type
-
 class Node:
     def __init__(self, id, location, group, state, proc, start=-1, end=-1, extend=None):
         self.id       = id

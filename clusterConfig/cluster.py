@@ -1,6 +1,4 @@
-from src.types.node import *
-
-__metaclass__ = type
+from .node import *
 
 class Cluster:
     def __init__(self, total=-1, idle=-1, avail=-1):

@@ -1,7 +1,5 @@
 from enum import Enum
 
-__metaclass__ = type
-
 class JobState(Enum):
     SUBMITTED = 1
     RUNNING = 2
