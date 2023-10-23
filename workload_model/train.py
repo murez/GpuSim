@@ -5,7 +5,7 @@ import torch
 import torch.nn as nn
 from torch.utils.data import DataLoader, Dataset
 import random
-from LRU_pytorch import LRU
+# from LRU_pytorch import LRU
 # from indrnn import IndRNNv2
 import torch.optim as optim
 from glob import glob
@@ -41,17 +41,17 @@ class ProfileDataset(Dataset):
         except:
             raise("load data failed")
         self.seed = 19260817
-        random.seed(self.seed)
-        only_one_model_batch = []
-        for k,v in self.feature.items():
-            if sum(v - np.ones(8)<0) < 2:
-                only_one_model_batch.append(k)
-        select_from_meta = []
-        for model, batch in only_one_model_batch:
-            s = self.meta[(self.meta.model == model) & (self.meta.batch == batch)]
-            select_from_meta.append(s)
-        for x in select_from_meta:
-            self.meta.drop(x.index, inplace=True)
+        # random.seed(self.seed)
+        # only_one_model_batch = []
+        # for k,v in self.feature.items():
+        #     if sum(v - np.ones(8)<0) < 2:
+        #         only_one_model_batch.append(k)
+        # select_from_meta = []
+        # for model, batch in only_one_model_batch:
+        #     s = self.meta[(self.meta.model == model) & (self.meta.batch == batch)]
+        #     select_from_meta.append(s)
+        # for x in select_from_meta:
+        #     self.meta.drop(x.index, inplace=True)
     def __len__(self):
         return len(self.meta)
     
